@@ -10,6 +10,11 @@
 	var n3 = (parseInt(n1) + parseInt(n2))
 	c.value = n3;
 	}
+	function multiplicar {
+	var n1 = document.getElementById("a").value;
+	var n2 = document.getElementById("b").value;}
+	var n3 = (parseInt (n1) * parseInt(n2))
+	c.value = n3;
 </script>
 
 <body>
@@ -22,7 +27,8 @@
 	<input type="text" name="segundocampo" id="b">
 </p>
 <p>
-	<input type="button" onClick="valor() " name="r" id="r" value="Resultado">
+	<input type="button" onClick="valor() " name="r" id="r" value="Sumar">
+	<input type="button" onClick="multiplicar()" name="nmulti" id="nmlt" value="Multiplicar">
 </p>
 <p>
 	<label for="c"> imprimiendo resultado: </label>
