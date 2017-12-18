@@ -10,41 +10,44 @@
 	var n3 = (parseInt(n1) + parseInt(n2))
 	c.value = n3;
 	}
-<<<<<<< HEAD
 	function restar() {
 	var n1 = document.getElementById("a").value;
 	var n2 = document.getElementById("b").value;
 	var n3 = (parseInt(n1) - parseInt(n2))
 	c.value = n3;
 	}
-=======
-	function multiplicar {
+	function multiplicar() {
 	var n1 = document.getElementById("a").value;
-	var n2 = document.getElementById("b").value;}
+	var n2 = document.getElementById("b").value;
 	var n3 = (parseInt (n1) * parseInt(n2))
 	c.value = n3;
->>>>>>> RamaDos
+	}
+	function dividir() {
+	var n1 = document.getElementById("a").value;
+	var n2 = document.getElementById("b").value;
+	var n3 = (parseInt (n1) / parseInt(n2))
+	c.value = n3;
+	}
 </script>
-
 <body>
-
 <p>
 	<label for="a">primer campo: </label>
 	<input type="text" name="primercampo" id="a">
-	
 	<label for="b">segundo campo: </label>
 	<input type="text" name="segundocampo" id="b">
 </p>
 <p>
-	<input type="button" onClick="valor() " name="r" id="r" value="Sumar">
-	<input type="button" onClick="multiplicar()" name="nmulti" id="nmlt" value="Multiplicar">
+	<input type="button" onClick="valor() " name="botonSum" id="bsum" value="Sumar">
+	<input type="button" onClick="restar()" name="botonRestar" id="bres" value="Restar">
+</p>
+<p>
+	<input type="button" onClick="multiplicar()" name="botonMul" id="bmult" value="Multiplicar">
+	<input type="button" onClick="dividir()" name="botonDiv" id="bdiv" value="Dividir">
+</p>
 </p>
 <p>
 	<label for="c"> imprimiendo resultado: </label>
 	<input type="text" name="tercercampo" id="c">
-</p>
-<p>
-	<input type="button" onClick="restar()" name="botonRestar" id="btnR" value="Restar">
 </p>
 </body>
 </html>
